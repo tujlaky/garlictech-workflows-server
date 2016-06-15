@@ -1,0 +1,40 @@
+# --------------------
+# OSX Files
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --------------------
+# Node Files
+# --------------------
+.nodemonignore
+npm-debug.log
+node_modules/
+node_modules
+coverage/
+
+# --------------------
+# App Files
+# --------------------
+modules/public/
+modules/views/
+/public/build/
+.tmp/
+logs/
+builds/
+dist/
+bin/
+*.bak
+credentials.coffee
+config.json
+
+# --------------------
+# Text editor files
+# --------------------
+*.sublime-project
+*.sublime-workspace

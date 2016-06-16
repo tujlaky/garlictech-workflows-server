@@ -1,7 +1,7 @@
 {
   "name": "@garlictech/garlictech-workflows-server",
   "version": "0.0.1",
-  "description": "garlictech workflows server",
+  "description": "Server-side workflow management for Garlic Tech projects.",
   "main": "src/index.coffee",
   "license": "SEE LICENSE IN license.txt",
   "repository": {
@@ -16,17 +16,10 @@
     "url": "https://github.com/gtrack/garlictech-workflows-server/issues?status=new&status=open"
   },
   "homepage": "https://bitbucket.org/gtrack/garlictech-workflows-server/wiki/Home",
-  "dependencies": {
-    "coffee-script": "^1.10.0",
-    "coffeelint": "^1.11.1"
+  "devDependencies": {
+    "coffee-script": "1.x.x",
+    "coffeelint": "1.x.x"
   },
   "scripts": {
-    "start": "node node_modules/.bin/webpack-dev-server --inline --hot --watch",
-    "unittest": "KARMA_TEST=unit node node_modules/karma/bin/karma start karma.conf.coffee",
-    "systemtest": "KARMA_TEST=system node node_modules/karma/bin/karma start karma.conf.coffee",
-    "build": "node node_modules/webpack/bin/webpack.js",
-    "protractor-start": "node_modules/protractor/bin/webdriver-manager start",
-    "protractor-test": "node_modules/protractor/bin/protractor ./src/test/protractor/config.coffee",
-    "protractor-setup": "node_modules/protractor/bin/webdriver-manager update --standalone"
   }
 }

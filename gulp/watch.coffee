@@ -7,7 +7,6 @@ module.exports = (gulp, c, fileTypes) ->
   return ->
     _.forEach fileTypes, (type) ->
       unittestTaskName = "unittest after compiling #{type}"
-      console.log 'atyala', unittestTaskName
       gulp.task unittestTaskName, [type], -> gulp.start 'unittest'
 
       watch ["#{config.srcRoot}/**/*.#{type}"], {debounceTimeout: 1000}, ->

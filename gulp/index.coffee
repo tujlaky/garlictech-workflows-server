@@ -1,4 +1,6 @@
-module.exports = (gulp, config) ->
+module.exports = (_gulp, config) ->
+  gulp = require('gulp-help') _gulp
+
   fileTypes = ['js', 'json', 'html', 'tpl', 'coffee']
 
   for name in fileTypes
@@ -17,3 +19,5 @@ module.exports = (gulp, config) ->
   gulp.task 'default', ['build'], ->
     gulp.start 'watch'
     gulp.start 'webserver'
+
+  return gulp

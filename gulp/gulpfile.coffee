@@ -1,6 +1,4 @@
-gulp = require 'gulp'
 gutil = require 'gutil'
-p = require('gulp-load-plugins')() # loading gulp plugins lazily
 _ = require 'lodash'
 argv = require('yargs').argv
 watch = require 'gulp-debounced-watch'
@@ -14,26 +12,8 @@ tplFiles = "#{serverRoot}/modules/auth/passwordless/template/*.tpl"
 htmlFiles = "#{serverRoot}/modules/auth/**/success.html"
 buildRoot =  "dist"
 
-handleError = (err) ->
-  console.log err.toString()
-  @emit 'end'
 
-# -----------------------------------------------------------------------------
-# Create a gulp task, and orchestrate it with default functions
-GulpSrc = (srcFiles, taskName, srcOptions = {}) ->
-  gulp.src srcFiles, srcOptions
-  .pipe p.cached taskName
-  .pipe p.using {}
-  .pipe p.size()
 
-# -----------------------------------------------------------------------------
-# handle src coffeescript files: static compilation
-gulp.task 'coffee', ->
-  GulpSrc coffeeFiles, 'coffee', {base: './'}
-  .pipe p.coffeelint()
-  .pipe p.coffeelint.reporter()
-  .pipe p.coffee(bare:true).on 'error', (err)->p.util.log err;@emit 'end'
-  .pipe gulp.dest buildRoot
 
 # -----------------------------------------------------------------------------
 gulp.task 'js', ->

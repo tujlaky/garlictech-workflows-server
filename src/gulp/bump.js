@@ -1,6 +1,7 @@
 // dependencies 
 var common = require('./common'),
     path = require('path'),
+    tag_version = require('gulp-tag-version'),
     p = require('gulp-load-plugins')();
 
   // git = require('gulp-git'),
@@ -38,7 +39,7 @@ var common = require('./common'),
       // read only one file to get the version number 
       .pipe(p.filter('package.json'))
       // **tag it in the repository** 
-      .pipe(p.tag_version());
+      .pipe(tag_version());
   }
    
   gulp.task('patch', function() { return inc('patch'); })

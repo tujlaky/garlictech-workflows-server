@@ -17,12 +17,14 @@
     "Zsolt R. Molnar <zsolt@zsoltmolnar.hu> (http://www.zsoltmolnar.hu)"
   ],
   "keywords": [
-    "garlictech-workflows-server"
+    "garlictech",
+    "workflows",
+    "gulp"
   ],
   "bugs": {
-    "url": "https://github.com/gtrack/garlictech-workflows-server/issues?status=new&status=open"
+    "url": "https://github.com/garlictech/garlictech-workflows-server/issues?status=new&status=open"
   },
-  "homepage": "https://github.com/gtrack/garlictech-workflows-server",
+  "homepage": "https://github.com/garlictech/garlictech-workflows-server",
   "dependencies": {
     "chai": "3.x.x",
     "coffee-script": "1.x.x",

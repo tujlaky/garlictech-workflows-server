@@ -22,4 +22,6 @@ module.exports = (_gulp, config) ->
     gulp.start 'watch'
     gulp.start 'webserver'
 
+  require('./bump')(gulp, config)
+
   return gulp

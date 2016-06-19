@@ -20,6 +20,7 @@ module.exports =
     srcRoot = "src"
     buildRoot = "dist"
 
+    root: c.base
     base: path.join c.base, srcRoot
     buildRoot: buildRoot
     srcRoot: srcRoot

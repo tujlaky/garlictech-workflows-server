@@ -9,10 +9,6 @@ install:
 - npm install
 script:
 - npm run build
-branches:
-  only:
-  - master
-  - stable
 deploy:
   provider: npm
   email: contact@garlictech.com

@@ -1,6 +1,6 @@
 {
   "name": "@garlictech/workflows-server",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "Server-side workflow management for Garlic Tech projects.",
   "main": "src/index.coffee",
   "license": "SEE LICENSE IN license.txt",

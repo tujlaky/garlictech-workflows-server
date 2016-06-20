@@ -27,7 +27,7 @@ modules/views/
 .tmp/
 logs/
 builds/
-dist/
+dist
 bin/
 *.bak
 credentials.coffee

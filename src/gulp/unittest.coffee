@@ -12,4 +12,4 @@ module.exports = (gulp, c) ->
       ui: 'bdd'
       recursive: true
     .on 'error', common.HandleError
-    .once 'end', -> process.exit(1)
+    .once 'end', -> process.exit(0)

@@ -12,8 +12,7 @@ module.exports =
 
 
   HandleError: (err) ->
-    p.util.log err
-    @emit 'end'
+    process.exit 1
 
 
   GetConfig: (c) ->

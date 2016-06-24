@@ -22,6 +22,6 @@ module.exports = (_gulp, config) ->
     gulp.start 'watch'
     gulp.start 'webserver'
 
-  require('./bump')(gulp, config)
+  require('@garlictech/workflows-common/dist/gulp/bump')(gulp, config)
 
   return gulp

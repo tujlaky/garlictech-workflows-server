@@ -12,6 +12,7 @@ module.exports =
 
 
   HandleError: (err) ->
+    p.util.log p.util.colors.red err.toString()
     process.exit 1
 
 

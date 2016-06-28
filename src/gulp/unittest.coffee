@@ -11,4 +11,5 @@ module.exports = (gulp, c) ->
       reporter: 'spec'
       ui: 'bdd'
       recursive: true
-    .on 'error', common.HandleError
+    .once 'error', common.HandleError
+    .once 'end', -> process.exit()

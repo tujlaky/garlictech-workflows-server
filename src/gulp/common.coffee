@@ -1,5 +1,6 @@
 p = require('gulp-load-plugins')()
 path = require 'path'
+gutil = require 'gulp-util'
 
 GLOBAL._ = require 'lodash'
 
@@ -12,6 +13,8 @@ module.exports =
 
 
   HandleError: (err) ->
+    gutil.log gutil.colors.red err.toString()
+
     process.exit 1
 
 

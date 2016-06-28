@@ -12,4 +12,5 @@ module.exports = (gulp, c) ->
       ui: 'bdd'
       recursive: true
     .once 'error', common.HandleError
-    .once 'end', -> process.exit()
+    .once 'end', ->
+      if process.env.NODE_ENV is 'development' then process.exit()

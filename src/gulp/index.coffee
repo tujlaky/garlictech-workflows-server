@@ -1,10 +1,17 @@
 module.exports = (_gulp, config) ->
   gulp = require('gulp-help') _gulp
 
-  fileTypes = ['js', 'json', 'html', 'tpl', 'coffee']
+  commonFileTypes = ['coffee']
+
+  for name in commonFileTypes
+    gulp.task name, require("@garlictech/workflows-common/dist/gulp/#{name}")(gulp, config)
+
+
+  fileTypes = ['js', 'json', 'html', 'tpl']
 
   for name in fileTypes
     gulp.task name, require("./#{name}")(gulp, config)
+
 
   gulp.task 'compile', fileTypes
 

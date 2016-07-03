@@ -1,29 +1,12 @@
-p = require('gulp-load-plugins')()
 path = require 'path'
 
-GLOBAL._ = require 'lodash'
+commonConfig = require "@garlictech/workflows-common/dist/gulp/common"
 
-module.exports =
-  GulpSrc: (gulp, srcFiles, taskName, srcOptions = {}) ->
-    gulp.src srcFiles, srcOptions
-    .pipe p.cached taskName
-    .pipe p.using {}
-    .pipe p.size()
+config = _.pick commonConfig, ['GulpSrc', 'HandleError']
 
+config.GetConfig = (c) ->
+  cfg = commonConfig.GetConfig c
+  cfg.serverEntry = path.join cfg.buildRoot, 'server.js'
+  return cfg
 
-  HandleError: (err) ->
-    p.util.log p.util.colors.red err.toString()
-    process.exit 1
-
-
-  GetConfig: (c) ->
-    srcRoot = "src"
-    buildRoot = "dist"
-
-    root: c.base
-    base: path.join c.base, srcRoot
-    buildRoot: buildRoot
-    srcRoot: srcRoot
-    unittestEntry: path.join buildRoot, 'test', 'unittest', 'index.js'
-    systemtestEntry: path.join buildRoot, 'test', 'systemtest', 'index.js'
-    serverEntry: path.join buildRoot, 'server.js'
+module.exports = config

@@ -7,11 +7,13 @@ module.exports = (_gulp, config) ->
     gulp.task name, require("@garlictech/workflows-common/dist/gulp/#{name}")(gulp, config)
 
 
-  fileTypes = ['js', 'json', 'html', 'tpl']
+  serverFileTypes = ['js', 'json', 'html', 'tpl']
 
-  for name in fileTypes
+  for name in serverFileTypes
     gulp.task name, require("./#{name}")(gulp, config)
 
+
+  fileTypes = _.union commonFileTypes, serverFileTypes
 
   gulp.task 'compile', fileTypes
 

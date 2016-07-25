@@ -1,5 +1,5 @@
 {
-  "name": "@garlictech/workflows-server",
+  "name": "garlictech-workflows-server",
   "version": "0.0.12",
   "description": "Server-side workflow management for Garlic Tech projects.",
   "main": "src/index.coffee",
@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/garlictech/garlictech-workflows-server",
   "dependencies": {
-    "@garlictech/common-server": "*",
-    "@garlictech/workflows-common": "*",
+    "garlictech-common-server": "*",
+    "garlictech-workflows-common": "*",
     "chai": "3.x.x",
     "coffee-script": "1.x.x",
     "coffeelint": "1.x.x",

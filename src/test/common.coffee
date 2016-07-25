@@ -8,4 +8,4 @@ GLOBAL.test =
     if dateString then sinon.useFakeTimers(new Date(dateString).getTime()) else sinon.useFakeTimers()
 
 module.exports = (config) ->
-  require('@garlictech/common-server/dist/globals') config
+  require('garlictech-common-server/dist/globals') config

@@ -1,6 +1,6 @@
 path = require 'path'
 
-commonConfig = require "@garlictech/workflows-common/dist/gulp/common"
+commonConfig = require "garlictech-workflows-common/dist/gulp/common"
 
 config = _.pick commonConfig, ['GulpSrc', 'HandleError']
 

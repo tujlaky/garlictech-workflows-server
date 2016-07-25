@@ -4,7 +4,7 @@ module.exports = (_gulp, config) ->
   commonFileTypes = ['coffee']
 
   for name in commonFileTypes
-    gulp.task name, require("@garlictech/workflows-common/dist/gulp/#{name}")(gulp, config)
+    gulp.task name, require("garlictech-workflows-common/dist/gulp/#{name}")(gulp, config)
 
 
   serverFileTypes = ['js', 'json', 'html', 'tpl']
@@ -31,6 +31,6 @@ module.exports = (_gulp, config) ->
     gulp.start 'watch'
     gulp.start 'webserver'
 
-  require('@garlictech/workflows-common/dist/gulp/bump')(gulp, config)
+  require('garlictech-workflows-common/dist/gulp/bump')(gulp, config)
 
   return gulp

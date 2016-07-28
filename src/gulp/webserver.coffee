@@ -5,6 +5,7 @@ module.exports = (gulp, c) ->
   config = common.GetConfig c
 
   return ->
-    p.env.set NODE_ENV: "development"
     p.nodemon
+      env:
+        NODE_ENV: 'development'
       script: "#{config.serverEntry}"

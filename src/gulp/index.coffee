@@ -1,11 +1,12 @@
+common = require './common'
+
 module.exports = (_gulp, config) ->
   gulp = require('gulp-help') _gulp
-
+  config = common.GetConfig config
   commonFileTypes = ['coffee']
 
   for name in commonFileTypes
     gulp.task name, require("garlictech-workflows-common/dist/gulp/#{name}")(gulp, config)
-
 
   serverFileTypes = ['js', 'json', 'html', 'tpl']
 

@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/garlictech/garlictech-workflows-server",
   "dependencies": {
-    "garlictech-common-server": "*",
-    "garlictech-workflows-common": "*",
+    "garlictech-workflows-common": "^0.1.0",
     "coffee-script": "1.x.x",
     "coffeelint": "1.x.x",
     "gulp": "3.x.x",

@@ -1,0 +1,2 @@
+export WORKFLOWS_ROOT=node_modules/garlictech-workflows-server
+# export NODE_ENV=development

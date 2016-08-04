@@ -28,7 +28,6 @@
   "dependencies": {
     "garlictech-common-server": "*",
     "garlictech-workflows-common": "*",
-    "chai": "3.x.x",
     "coffee-script": "1.x.x",
     "coffeelint": "1.x.x",
     "gulp": "3.x.x",
@@ -46,8 +45,7 @@
     "gulp-using": "0.x.x",
     "gulp-util": "^3.0.7",
     "gutil": "1.x.x",
-    "lodash": "4.x.x",
-    "sinon": "1.x.x"
+    "lodash": "4.x.x"
   },
   "scripts": {
     "start-dev": "gulp build && gulp watch",

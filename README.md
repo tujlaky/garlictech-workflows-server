@@ -1,6 +1,8 @@
 # Server side development workflows
 
-[![Build Status](https://travis-ci.com/garlictech/garlictech-workflows-server.svg?token=PrxB3e9orjydN7XUbkZL&branch=master)](https://travis-ci.com/garlictech/garlictech-workflows-server)
+[![NPM Package Version](https://img.shields.io/npm/v/garlictech-workflows-server.svg?style=flat-square)](https://www.npmjs.com/package/garlictech-workflows-server)
+[![Build Status](https://travis-ci.org/garlictech/garlictech-workflows-server.svg?branch=master)](https://travis-ci.org/garlictech/garlictech-workflows-server)
+[![Dependency Status](https://img.shields.io/david/garlictech/garlictech-workflows-server.svg?style=flat-square)](https://david-dm.org/garlictech/garlictech-workflows-server)
 
 This is a centralized build/development workflow management system that all the GarlicTech server side components should use.
 

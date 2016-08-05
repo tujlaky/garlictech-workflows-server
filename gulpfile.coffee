@@ -1,7 +1,7 @@
 gulp = require 'gulp'
 
 config =
-  base: __dirname
+  root: __dirname
 
 gulp = require("./src/gulp")(gulp, config)
 

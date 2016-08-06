@@ -8,6 +8,8 @@ This is a centralized build/development workflow management system that all the 
 
 Add this repo as a development dependency to your (generated...) project.
 
+Before everything, read the the [pages common to all the GarlicTech projects](https://github.com/garlictech/garlictech-workflows-common).
+
 List available gulp tasks with help:
 
 ```gulp help```

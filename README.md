@@ -17,3 +17,10 @@ List available gulp tasks with help:
 ## Custom tasks
 
 Add your custom tasks to the (generated) project gulpfile. You can even redefine the default tasks.
+
+## Development
+
+Execute teh sommon steps mentioned above. Before starting the server, do not forget to build it:
+
+```npm run build```
+

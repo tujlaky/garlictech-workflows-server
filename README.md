@@ -8,6 +8,8 @@ This is a centralized build/development workflow management system that all the 
 
 Add this repo as a development dependency to your (generated...) project.
 
+Before everything, read the the [pages common to all the GarlicTech projects](https://github.com/garlictech/garlictech-workflows-common).
+
 List available gulp tasks with help:
 
 ```gulp help```
@@ -15,3 +17,10 @@ List available gulp tasks with help:
 ## Custom tasks
 
 Add your custom tasks to the (generated) project gulpfile. You can even redefine the default tasks.
+
+## Development
+
+Execute teh sommon steps mentioned above. Before starting the server, do not forget to build it:
+
+```npm run build```
+

@@ -11,8 +11,4 @@ module.exports = (gulp, c) ->
       reporter: 'spec'
       ui: 'bdd'
       recursive: true
-    .once 'error', (err) ->
-      console.log err
-      common.HandleError()
-    .once 'end', ->
-      if process.env.NODE_ENV isnt 'development' then process.exit()
+    .once 'error', -> common.HandleError()

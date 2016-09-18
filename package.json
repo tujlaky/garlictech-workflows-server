@@ -39,13 +39,14 @@
     "gulp-filter": "^4.0.0",
     "gulp-help": "1.x.x",
     "gulp-load-plugins": "1.x.x",
-    "gulp-mocha": "2.x.x",
     "gulp-nodemon": "2.x.x",
     "gulp-size": "2.x.x",
+    "gulp-spawn-mocha": "^3.1.0",
     "gulp-using": "0.x.x",
     "gulp-util": "^3.0.7",
     "gutil": "1.x.x",
-    "lodash": "4.x.x"
+    "lodash": "4.x.x",
+    "mocha": "^3.0.2"
   },
   "scripts": {
     "start-dev": "gulp build && gulp watch",

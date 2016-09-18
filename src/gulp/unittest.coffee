@@ -7,7 +7,7 @@ module.exports = (gulp, c) ->
   return ->
     p.env.set NODE_ENV: "test"
     gulp.src [config.unittestEntry, "#{config.buildRoot}/**/*unit-tests.js"], {read: false}
-    .pipe p.mocha
+    .pipe p.spawnMocha
       reporter: 'spec'
       ui: 'bdd'
       recursive: true
